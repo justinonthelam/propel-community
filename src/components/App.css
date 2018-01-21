@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);* {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  webkit-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+.App {
+  font-family: "Roboto-light", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  color: #45434A;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-content {
+  flex: 1 0 auto;
+  padding: var(--space) var(--space) 0;
+  width: 100%;
+}
+
+.site-content:after {
+  content: '\00a0';
+  display: block;
+  margin-top: var(--space);
+  height: 0;
+  visibility: hidden;
+}
+
+a {
+  color: #45434A;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFA630;
+}
+
+.button {
+  background: #FFA630;
+  padding: 10px 20px;
+  color: #f9f9f9;
+  border-radius: 3px;
+  line-height: 1;
+  border: none;
+  font-size: 0.9em;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: rgb(211, 133, 30);
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+  width: 75%;
+  max-width: 1024px;
+  min-width: 50%;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: middle;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 66px;
+  text-align: left;
+  margin-top: 15px;
+}
+
+nav .container {
+  max-width: 1024px;
+  min-width: 50%;
+  width: 75%;
+  /* width: 95%; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: middle;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none !important;
+}
+
+nav h1 {
+  font-size: 1.7em;
+  color: #090D15;
+  font-family: "Roboto-medium"
+}
+
+nav h1:hover {
+  cursor: pointer;
+}
+
+nav .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: middle;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav .right .links a {
+  text-decoration: none;
+  margin: 0 22px 0 0;
+}
+
+nav .right .links .button:hover {
+  color: #fff;
+  text-decoration: none !important;
+}
